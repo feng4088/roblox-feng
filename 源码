@@ -1,33 +1,25 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
 
 local Window = OrionLib:MakeWindow({Name = "枫", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 OrionLib:MakeNotification({
-	Name = "欢迎使用枫脚本",
-	Content = "作者qq:2952503148",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-	})
-   local Tab = Window:MakeTab({
-
-   Name = "通用"
-
-   Icon = "rbxassetid://4483345998",
-
-   PremiumOnly = false
-   
+    Name = "欢迎使用枫脚本",
+    Content = "作者qq:2952503148",
+    Image = "rbxassetid://4483345998",
+    Time = 5
 })
 
-   Tab:AddButton({
-   
-   Name = "spy"
-   
-   Callback = function()
-   
-   loadstring(game:HttpGet('https://raw.githubusercontent.com/useranewrff/roblox/main/spy%E6%B1%89%E5%8C%96%20(1).txt'))()
-  
-   end
-   
+local Tab = Window:MakeTab({
+    Name = "通用",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "spy",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/useranewrff/roblox/main/spy%E6%B1%89%E5%8C%96%20(1).txt'))()
+    end
 })
 
 OrionLib:Init()
