@@ -10,16 +10,12 @@ OrionLib:MakeNotification({
 	})
    local Tab = Window:MakeTab({
 
-   Name = "窗口名字"
+   Name = "通用"
 
    Icon = "rbxassetid://4483345998",
 
    PremiumOnly = false
    
-})
-
-local Section = Tab:AddSection({
-	Name = "通用"
 })
 
    Tab:AddButton({
