@@ -12,26 +12,3 @@ frame.Actibe = true
 frame.Draggable = true
 
 
-   local Tab = Window:MakeTab({
-
-   Name = "通用"
-
-   Icon = "rbxassetid://4483345998",
-
-   PremiumOnly = false
-   
-})
-
-   Tab:AddButton({
-   
-   Name = "spy"
-   
-   Callback = function()
-   
-   loadstring(game:HttpGet('https://raw.githubusercontent.com/useranewrff/roblox/main/spy%E6%B1%89%E5%8C%96%20(1).txt'))()
-  
-   end
-   
-})
-
-
