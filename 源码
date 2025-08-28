@@ -10,5 +10,3 @@ frame.BackgroundColor3 = Color3.fromRGB(248,248,248)
 frame.Position = UDim2.new(0.326148063,0,0.29880476,0)
 frame.Active = true 
 frame.Draggable = true
-
-
