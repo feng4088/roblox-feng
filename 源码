@@ -1,0 +1,272 @@
+local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")() 
+
+local OpenUI = Instance.new("ScreenGui") 
+local ImageButton = Instance.new("ImageButton") 
+local UICorner = Instance.new("UICorner") 
+OpenUI.Name = "OpenUI" 
+OpenUI.Parent = game.CoreGui 
+OpenUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling 
+ImageButton.Parent = OpenUI 
+ImageButton.BackgroundColor3 = Color3.fromRGB(5, 6, 7) 
+ImageButton.BackgroundTransparency = 0.500 
+ImageButton.Position = UDim2.new(0.0235790554, 0, 0.466334164, 0) 
+ImageButton.Size = UDim2.new(0, 50, 0, 50) 
+ImageButton.Image = "rbxassetid://13868945140" 
+ImageButton.Draggable = true 
+UICorner.CornerRadius = UDim.new(0, 200) 
+UICorner.Parent = ImageButton 
+ImageButton.MouseButton1Click:Connect(function() 
+  if uihide == false then
+	uihide = true
+	game.CoreGui.ui.Main:TweenSize(UDim2.new(0, 0, 0, 0),"In","Quad",0.4,true)
+else
+	uihide = false
+	game.CoreGui.ui.Main:TweenSize(UDim2.new(0, 560, 0, 319),"Out","Quad",0.4,true)
+		end 
+		
+end)
+
+uihide = false
+
+   local Tab = Window:MakeTab({
+
+   Name = "公告"
+
+   Icon = "rbxassetid://4483345998",
+
+   PremiumOnly = false
+   
+})
+
+   Name = "此脚本完全免费"
+
+   Name = "死妈圈钱狗滚远点
+
+   Name = "QQ:2952503148"
+   
+   Name = "别被圈了"
+   
+   Name = "此脚本处于测试"
+   
+   LOL:Label("你的注入器:"..identifyexecutor())
+LOL:Label("当前服务器ID:" .. game.GameId .. " ")
+LOL:Label("你的用户名" .. game.Players.LocalPlayer.Name .. " ")
+
+local Tab = Window:MakeTab({
+  
+   Name = "窗口名字"
+   
+   Icon = "rbxassetid://4483345998",
+   
+   PremiumOnly = false
+   
+})
+   
+   Tab:AddSlider({
+   
+   Name = "速度"
+   
+   Min = 1,
+   
+   Max = 500,
+   
+   Default = 16,
+   
+   Color = Color3.fromRGB(255,255,255),
+   
+   Increment = 1,
+   
+   ValueName = "数值",
+   
+   Callback = function(Value)
+   
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+   
+   end
+   
+}]
+   
+   Tab:AddSlider({
+   
+   Name = "跳跃"
+
+   Min = 16,
+   
+   Max = 1000,
+   
+   Default = 50,
+   
+   Color = Color3.fromRGB(255,255,255),
+   
+   Increment = 1,
+   
+   ValueName = "数值",
+   
+   game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+   
+   Callback = function(Value)
+   
+   end
+   
+}]
+   
+   Tab:AddButton({
+   
+   Name = "飞"
+   
+   Callback = function()
+   
+   loadstring(game:HttpGet('https://pastebin.com/raw/U27yQRxS'))()
+  
+   end
+  
+})
+  
+   Tab:AddButton({
+  
+   Name = "YI"
+  
+   Callback = function()
+  
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+  
+   end
+  
+})
+  
+   Tab:AddButton({
+  
+   Name = "甩人"
+  
+   Callback = function()
+  
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/shuaifei/main/shuaifei'))()
+  
+   end
+  
+})
+  
+   Tab:AddNutton({
+  
+   Name = "飞车"
+  
+   Callback = function()
+  
+   loadstring(game:HttpGet("https://pastebin.com/raw/G3GnBCyC", true))()
+  
+   end
+  
+})
+  
+   Tab=AddNutton({
+  
+   Name = "键盘"
+  
+   Callback = function()
+  
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  
+   end
+  
+})
+  
+   Tab=AddNutton
+  
+   Name = "旋转"
+  
+   Callback = function()
+  
+   loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+  
+   end
+  
+})
+  
+   Tab=AddNutton
+  
+   Name = "透视"
+   
+   Callback = function()
+  
+   loadstring(game:GetObjects("rbxassetid://10092697033")[1].Source)()
+  
+   end
+  
+})
+
+   Tab:AddButton({
+   
+   Name = "自瞄"
+   
+   Callback = function()
+   
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/useranewrff/roblox/main/aimbot.lua'))()
+  
+   end
+   
+})
+   
+   Tab=AddNutton
+   
+   Name = "跑墙"
+   
+   Callback = function()
+   
+   loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+   
+   end
+   
+})
+
+   Tab:AddButton({
+   
+   Name = "改动作"
+   
+   Callback = function()
+   
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/-spy/main/%E6%94%B9%E5%8A%A8%E4%BD%9C'))()
+  
+   end
+   
+})
+
+   Tab:AddButton({
+   
+   Name = "spy"
+   
+   Callback = function()
+   
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/useranewrff/roblox/main/spy%E6%B1%89%E5%8C%96%20(1).txt'))()
+  
+   end
+   
+})
+       
+       local Tab = Window:MakeTab({
+
+   Name = "爬搂然后跳楼 原名 clamber and jump"
+
+   Icon = "rbxassetid://4483345998",
+
+   PremiumOnly = false
+   
+})
+
+Tab:AddToggle({
+
+	Name = "买蛋",
+	
+	Default = false,
+	
+	Callback = function(Value)
+	
+	local args = {
+    [1] = 7000003,
+    [2] = 10
+}
+
+game:GetService("ReplicatedStorage").Tool.DrawUp.Msg.DrawHero:InvokeServer(unpack(args))
+
+		
+	end    
+})
