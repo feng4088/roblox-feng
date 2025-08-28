@@ -121,6 +121,18 @@ local Tab = Window:MakeTab({
    end
   
 })
+
+   Tab:AddButton({
+   
+   Name = "穿墙"
+   
+   Callback = function()
+   
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()
+  
+   end
+   
+})
   
    Tab:AddButton({
   
