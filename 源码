@@ -1,3 +1,13 @@
+local ScreenGui = Instance.new("ScreenGui")
+local UI = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local Key = Instance.new("TextBox")
+local Start = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
 local OpenUI = Instance.new("ScreenGui") 
 local ImageButton = Instance.new("ImageButton") 
 local UICorner = Instance.new("UICorner") 
