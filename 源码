@@ -24,15 +24,14 @@ frame.Draggable = true
 
    Tab:AddButton({
    
-   Name = "穿墙"
+   Name = "spy"
    
    Callback = function()
    
-   你的简化脚本
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/useranewrff/roblox/main/spy%E6%B1%89%E5%8C%96%20(1).txt'))()
   
    end
    
 })
 
 
-OrionLib:Init()
