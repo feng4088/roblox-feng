@@ -1,5 +1,3 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-
    local Tab = Window:MakeTab({
 
    Name = "通用"
@@ -10,6 +8,17 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
    
 })
 
+   Tab:AddButton({
+   
+   Name = "穿墙"
+   
+   Callback = function()
+   
+   你的简化脚本
+  
+   end
+   
+})
 
 
 OrionLib:Init()
