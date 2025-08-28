@@ -23,18 +23,18 @@ wait(1)
      {Image = "http://www.roblox.com/asset/?id=4483345998", ImageColor = Color3.fromRGB(255, 84, 84)} 
  ) 
   ---gui创建
-local ClelstialGui = Instance.new("ClelstialGui")
+local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 local UICorner = Instance.new("UICorner")
 
 
-ClelstialGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ClelstialGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ClelstialGui.ResetOnSpawn = false
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
-Frame.Parent = ClelstialGui
+Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Frame.BackgroundTransparency = 0.500
 Frame.Position = UDim2.new(0.858712733, 0, 0.0237762257, 0)
@@ -64,12 +64,12 @@ end)
 UITextSizeConstraint.Parent = TextButton
 UITextSizeConstraint.MaxTextSize = 30
 
-local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/ostkakan1337/celestial/refs/heads/main/ui.lua'))()
+local lib = loadstring(game:HttpGet"https://pastebin.com/raw/aDQ86WZA")()
 ---创建窗口
 local win = lib:Window("枫",Color3.fromRGB(0, 255, 0), Enum.KeyCode.E) -- your own keybind 
 ---功能分类区
 local tab = win:Tab("通用")
 ---按钮控件
 tab:Button("spy", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/useranewrff/roblox/main/spy%E6%B1%89%E5%8C%96%20(1).txt'))()
+脚本
 end)
