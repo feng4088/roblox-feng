@@ -87,4 +87,4 @@ Tabs.Compile:Button({
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/useranewrff/roblox/main/spy%E6%B1%89%E5%8C%96%20(1).txt'))()
     end
-})p
+})
