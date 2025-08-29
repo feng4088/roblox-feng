@@ -7,7 +7,7 @@ local Window = Rayfield:CreateWindow({
 	LoadingSubtitle = "by Sirius",
 	ConfigurationSaving = {
 		Enabled = true,
-		FolderName = 枫脚本, 
+		FolderName = nil, 
 		FileName = "枫脚本"
 	},
         Discord = {
@@ -57,8 +57,6 @@ local Button = Tab:CreateButton({
 	end,
 })
 
-})
-
 local Toggle = Tab:CreateToggle({
 	Name = "夜视",
 	CurrentValue = false,
@@ -103,7 +101,7 @@ local Button = Tab:CreateButton({
 	end,
 })
 
-local Tab = Window:CreateTab("自然灾害模拟器", 4483362458)
+local Tab = Window:CreateTab("自然灾害模拟器", 448336561)
 
 local Button = Tab:CreateButton({
 	Name = "黑洞",
