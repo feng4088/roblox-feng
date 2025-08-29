@@ -1,27 +1,5 @@
 ---开头
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
----通知
-Rayfield:Notify({
-    Title = "枫脚本",
-    Content = "请等待",
-    Duration = 1,
-    Image = 4483362458,
-    
-            end
-		},
-	},
-})
----通知
-Rayfield:Notify({
-    Title = "枫脚本",
-    Content = "即将开始",
-    Duration = 1,
-    Image = 4483362458,
-    
-            end
-		},
-	},
-})
 ---窗口
 local Window = Rayfield:CreateWindow({
 	Name = "Rayfield Example Window",
