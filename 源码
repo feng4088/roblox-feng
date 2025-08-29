@@ -38,66 +38,59 @@ CurrentFPS = CurrentFPS - CurrentFPS % 1
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "枫", HidePremium = false, SaveConfig = true,IntroText = "大东北是我的家乡
-唢呐吹出了美美的模样
-哥们儿相聚必须整二两
-醉了月亮，暖了我心肠", ConfigFolder = "qidong"})
-local Tab = Window:MakeTab({
-    Name = "通用",
-	Icon = "tongyong",
-	PremiumOnly = false
+
+local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingyan777/roblox/refs/heads/main/main.lua"))()
+
+local Confirmed = false
+
+WindUI:Popup({
+    Title = "枫脚本",
+    IconThemed = true,
+    Content = "免费脚本 ",
+    Buttons = {
+        {
+            Title = "退出",
+            Callback = function() end,
+            Variant = "Secondary",
+        },
+        {
+            Title = "进入",
+            Icon = "arrow-right",
+            Callback = function() Confirmed = true end,
+            Variant = "Primary",
+        }
+    }
 })
-Tab:AddButton({
-	Name = "飞天",
-	Callback = function()
-loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
-end
-})    
-Tab:AddButton({
-	Name = "穿墙",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()
-end
-})    
-Tab:AddButton({
-	Name = "透视",
-	Callback = function()
-loadstring(game:GetObjects("rbxassetid://10092697033")[1].Source)()
-end
-})    
-Tab:AddToggle({
-	Name = "夜视",
-	Default = false,
-	Callback = function(Value)
-		if Value then
-		    game.Lighting.Ambient = Color3.new(1, 1, 1)
-		else
-		    game.Lighting.Ambient = Color3.new(0, 0, 0)
-		end
-	end    
+
+repeat wait() until Confirmed
+
+local Window = WindUI:CreateWindow({
+    Title = "御魂",
+    Icon = "rbxassetid://129260712070622",
+    IconThemed = true,
+    Folder = "XYScript",
+    Size = UDim2.fromOffset(580, 340),
+    Transparent = true,
+    Theme = "Light",
+    User = { Enabled = true },
+    SideBarWidth = 200,
+    ScrollBarEnabled = true,
 })
-Tab:AddSlider({
-	Name = "移动速度",
-	Min = 16,
-	Max = 500,
-	Default = 16,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "speed",
-	Callback = function(Value)
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end    
+
+local Tabs = {
+    Main = Window.Tab{( Title = "主页", loce = "zhuye" )}
+    Practical = Window.Tab{( Title = "通用", loce = "tongyong")}
+}
+
+Window.SelectTab(1)
+
+Tabs.Main:Paragraph({
+    Title = "欢迎使用枫脚本"
+    Desc = "作者qq 2952503148"
 })
-Tab:AddSlider({
-	Name = "高度",
-	Min = 10,
-	Max = 200,
-	Default = 50,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "high",
-	Callback = function(Value)
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-	end    
+Tabs.Practical:Button({
+    Title = "飞行"
+    Desc = ""
+    Callback = function()
+        loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
 })
