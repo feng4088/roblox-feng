@@ -1,113 +1,14 @@
+local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
+local Window = OrionLib:MakeWindow({Name = "枫", HidePremium = false, SaveConfig = true,IntroText = "枫v1.0", ConfigFolder = "majiaqi"})
 
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
-
-local Window = Rayfield:CreateWindow({
-	Name = "Rayfield Example Window",
-	LoadingTitle = "Rayfield Interface Suite",
-	LoadingSubtitle = "by Sirius",
-	ConfigurationSaving = {
-		Enabled = true,
-		FolderName = nil, 
-		FileName = "枫脚本"
-	},
-        Discord = {
-        	Enabled = false,
-        	Invite = "sirius", 
-        	RememberJoins = true 
-        },
-	KeySystem = false, 
-	KeySettings = {
-		Title = "Sirius Hub",
-		Subtitle = "Key System",
-		Note = "Join the discord (discord.gg/sirius)",
-		FileName = "SiriusKey",
-		SaveKey = true,
-		GrabKeyFromSite = false, 
-		Key = "Hello"
-	}
+local Tab = Window:MakeTab({
+    Name = "通用",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
-
-local Tab = Window:CreateTab("通用", 4483362458) 
-
-local Button = Tab:CreateButton({
-	Name = "飞行",
-	Callback = function()
-	    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
-	end,
-})
-
-local Button = Tab:CreateButton({
-	Name = "穿墙",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()
-	end,
-})
-
-local Button = Tab:CreateButton({
-	Name = "甩飞",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/shuaifei/refs/heads/main/shuaifei'))()
-	end,
-})
-
-local Button = Tab:CreateButton({
-	Name = "透视",
-	Callback = function()
-		loadstring(game:GetObjects("rbxassetid://10092697033")[1].Source)()
-	end,
-})
-
-local Toggle = Tab:CreateToggle({
-	Name = "夜视",
-	CurrentValue = false,
-	Flag = "Toggle1", 
-	Callback = function(Value)
-		if Value then
-		    game.Lighting.Ambient = Color3.new(1, 1, 1)
-		else
-		    game.Lighting.Ambient = Color3.new(0, 0, 0)
-		end
-	end,
-})
-
-local Slider = Tab:CreateSlider({
-	Name = "移动速度",
-	Range = {16, 500},
-	Increment = 20,
-	Suffix = "m/s",
-	CurrentValue = 16,
-	Flag = "Slider1",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end,
-})
-
-local Slider = Tab:CreateSlider({
-	Name = "跳跃高度",
-	Range = {50, 200},
-	Increment = 10,
-	Suffix = "m",
-	CurrentValue = 50,
-	Flag = "Slider2", 
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-	end,
-})
-
-local Button = Tab:CreateButton({
+Tab:AddButton({
 	Name = "spy",
 	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/useranewrff/roblox/main/spy%E6%B1%89%E5%8C%96%20(1).txt'))()
-	end,
-})
-
-local Tab = Window:CreateTab("自然灾害模拟器", 448336561)
-
-local Button = Tab:CreateButton({
-	Name = "黑洞",
-	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/Q1t1VkrL"))()
-	end,
-})
-
-Rayfield:LoadConfiguration()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/useranewrff/roblox/main/spy%E6%B1%89%E5%8C%96%20(1).txt'))()
+end
+})    
