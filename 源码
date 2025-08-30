@@ -81,7 +81,7 @@ Tabs.Practical:Button({
     end
 })
 Tabs.Practical:Button({
-    Title = "黑洞（穷凶极恶）",
+    Title = "黑洞",
     Desc = "",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/Q1t1VkrL"))()
