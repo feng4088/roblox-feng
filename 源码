@@ -79,7 +79,13 @@ Tabs.Practical:Button({
         loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/shuaifei/refs/heads/main/shuaifei'))()
     end
 })
-
+Tabs.Practical:Button({
+    Title = "黑洞（穷凶极恶）",
+    Desc = "",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/Q1t1VkrL"))()
+    end
+})
 Tabs.Compile:Button({
     Title = "spy",
     Desc = "",
