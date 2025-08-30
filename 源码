@@ -1,5 +1,4 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/windui/refs/heads/main/main.lua'))()
-
+local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingyan777/roblox/refs/heads/main/main.lua"))()
 function gradient(text, startColor, endColor)
     local result = ""
     local length = #text
