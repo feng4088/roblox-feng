@@ -73,6 +73,17 @@ Window:EditOpenButton({
 
 local Tabs = {}
 
+Tabs.MainSection = Window:Section({
+    Title = "主页",
+    Icon = "shouye",
+    Opened = true,
+})
+
+Tabs.WindowSection = Window:Section({
+    Title = "窗口管理",
+    Icon = "app-window-mac",
+    Opened = true,
+})
 Tabs.LuaSection = Window:Section({
     Title = "脚本",
     Icon = "jiaoben",
@@ -84,8 +95,15 @@ Tabs.WindowSection = Window:Section({
     Icon = "app-window-mac",
     Opened = true,
 })
+Tabs.WindowSection = Window:Section({
+    Title = "窗口管理",
+    Icon = "app-window-mac",
+    Opened = true,
+})
 
 Tabs.ThroughTab = Tabs.LuaSection:Tab({ Title = "通用", Icon = "type" })
+
+Tabs.ParagraphTab = Tabs.MainSection:Tab({ Title = "首页", Icon = "type" })
 
 Tabs.WindowTab = Tabs.WindowSection:Tab({ 
     Title = "窗口和文件配置", 
