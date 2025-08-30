@@ -88,3 +88,10 @@ Tabs.Compile:Button({
         loadstring(game:HttpGet('https://raw.githubusercontent.com/useranewrff/roblox/main/spy%E6%B1%89%E5%8C%96%20(1).txt'))()
     end
 })
+Tabs.Compile:Button({
+    Title = "抓坐标",
+    Desc = "",
+    Callback = 
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/-spy/refs/heads/main/%E6%8A%93%E5%9D%90%E6%A0%87'))()
+    end
+})
