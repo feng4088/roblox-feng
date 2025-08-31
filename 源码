@@ -216,10 +216,16 @@ Tabs.ThroughTab:Button({
 Tabs.FETab:Button({
     Title = "拳击",
     Callback = function()
-        loadstring(game:HttpGet(("https://raw.githubusercontent.com/OmarXploits/Free-Scripts/main/R15-Fighter"),true))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/shakk-code/fe-punch-script/refs/heads/main/script.lua', true))()
     end
 })
 
+Tabs.小Tab:Button({
+    Title = "名字",
+    Callback = function()
+        脚本
+    end
+})
 Window:OnClose(function()
     print("UI closed.")
 end)
