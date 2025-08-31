@@ -79,22 +79,12 @@ Tabs.MainSection = Window:Section({
     Opened = true,
 })
 
-Tabs.WindowSection = Window:Section({
-    Title = "窗口管理",
-    Icon = "app-window-mac",
-    Opened = true,
-})
 Tabs.LuaSection = Window:Section({
     Title = "脚本",
     Icon = "jiaoben",
     Opened = true,
 })
 
-Tabs.WindowSection = Window:Section({
-    Title = "窗口管理",
-    Icon = "app-window-mac",
-    Opened = true,
-})
 Tabs.WindowSection = Window:Section({
     Title = "窗口管理",
     Icon = "app-window-mac",
