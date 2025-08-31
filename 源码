@@ -219,12 +219,20 @@ Tabs.FETab:Button({
         loadstring(game:HttpGet('https://raw.githubusercontent.com/shakk-code/fe-punch-script/refs/heads/main/script.lua', true))()
     end
 })
-Window:OnClose(function()
-    print("UI closed.")
-end)
+
 Tabs.FETab:Button({
     Title = "免费通行证",
     Callback = function()
-        for _,v in pairs(game:GetDescendants()) doif v.ClassName == "RemoteEvent" thenif v.Parent.Name == "WeaponsRemotes" or v.Parent.Name == "VipRemotes" or v.Parent.Name == "Remotes" thenv:FireServer()endendend
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/zizhi/refs/heads/main/%E5%85%8D%E8%B4%B9%E9%80%9A%E8%A1%8C%E8%AF%81'))()
     end
 })
+
+Tabs.FETab:Button({
+    Title = "有伤害的剑",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/zizhi/refs/heads/main/%E6%9C%89%E4%BC%A4%E5%AE%B3%E7%9A%84%E5%89%91'))()
+    end
+})
+Window:OnClose(function()
+    print("UI closed.")
+end)
