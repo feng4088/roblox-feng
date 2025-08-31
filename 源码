@@ -108,8 +108,7 @@ Window:SelectTab(1)
 Tabs.ParagraphTab:Paragraph({
     Title = "枫脚本",
     Desc = "塞西莉亚！！！",
-    Image = "https://m.baidu.com/sf/vsearch?pd=image_content&word=%E7%99%BD%E5%9C%A3%E5%A5%B3%E4%B8%8E%E9%BB%91%E7%89%A7%E5%B8%88%20%E5%A1%9E%E8%A5%BF%E8%8E%89%E4%BA%9A&tn=vsearch&atn=mediacy&fr=tab&sa=vs_tab&imgpn=8&imgspn=&tt=1&di=7523999300557209601&bdtype=0&pi=0&cs=2227787214%2C1962191509&imgos=584698680%2C2974259601&imgis=0%2C0&imgtype=0&ssrlid=10601037521435396916&imgcontent=%7B%22materialQuery%22%3A%22%22%7D",
-    ImageSize = 42,
+    Image = "https://ibb.co/XrgJqsDC",
     Thumbnail = "https://c-ssl.duitang.com/uploads/blog/202103/27/20210327131203_74b6b.jpg",
     ThumbnailSize = 120
 })
