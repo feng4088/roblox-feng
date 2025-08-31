@@ -1,4 +1,4 @@
-local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingyan777/roblox/refs/heads/main/main.lua"))()
+local WindUI = loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/windui/refs/heads/main/main.lua'))()
 
 function gradient(text, startColor, endColor)
     local result = ""
@@ -11,7 +11,7 @@ function gradient(text, startColor, endColor)
         local b = math.floor((startColor.B + (endColor.B - startColor.B) * t) * 255)
 
         local char = text:sub(i, i)
-        result = result .. ""<font color=\"rgb(" .. r ..", " .. g .. ", " .. b .. ")\">" .. char .. "</font>"
+        result = result .. "<font color=\"rgb(" .. r ..", " .. g .. ", " .. b .. ")\">" .. char .. "</font>"
     end
 
     return result
@@ -54,9 +54,9 @@ local Window = WindUI:CreateWindow({
 })
 
 Window:Tag({
-        Title = "v1.0.0",
-        Color = Color3.fromHex("#30ff6a")
-    })
+    Title = "v1.0.0",
+    Color = Color3.fromHex("#30ff6a")
+})
 
 Window:EditOpenButton({
     Title = "枫脚本",
@@ -137,8 +137,8 @@ Tabs.ThroughTab:Slider({
     },
     Increment = 1,
     Callback = function(value)
-        if game.Players.LocalPlayer.Character then
-            game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+        if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid") then
+            game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").JumpPower = value
         end
     end
 })
@@ -152,8 +152,8 @@ Tabs.ThroughTab:Slider({
     },
     Increment = 1,
     Callback = function(value)
-        if game.Players.LocalPlayer.Character then
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+        if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid") then
+            game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").WalkSpeed = value
         end
     end
 })
@@ -209,8 +209,8 @@ Tabs.ThroughTab:Button({
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/Q1t1VkrL"))()
     end
-
 })
+
 Window:OnClose(function()
     print("UI closed.")
 end)
