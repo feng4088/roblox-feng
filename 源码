@@ -117,7 +117,7 @@ Tabs.ParagraphTab:Paragraph({
 Tabs.ParagraphTab:Button({
     Title = "发送",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingyan777/roblox/refs/heads/main/phonto"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/feng4088/tupian/refs/heads/main/photo"))()
     end
 })
 
