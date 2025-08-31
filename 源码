@@ -188,7 +188,7 @@ Tabs.ThroughTab:Toggle({
 Tabs.ThroughTab:Button({
     Title = "飞行",
     Callback = function()
-        loadstring(game:HttpGet(\"https://raw.githubusercontent.com/xiaow6720-max/-1/c62d80a8fbd0175a28814be2b0858d45db74b8a2/%E9%A3%9E%E8%A1%8C%E8%84%9A%E6%9C%ACV3(%E5%85%A8%E6%B8%B8%E6%88%8F%E9%80%9A%E7%94%A8)%20.txt\"))()" }
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaow6720-max/-1/c62d80a8fbd0175a28814be2b0858d45db74b8a2/%E9%A3%9E%E8%A1%8C%E8%84%9A%E6%9C%ACV3(%E5%85%A8%E6%B8%B8%E6%88%8F%E9%80%9A%E7%94%A8)%20.txt"))()
     end
 })
 
@@ -219,6 +219,7 @@ Tabs.FETab:Button({
         loadstring(game:HttpGet(("https://raw.githubusercontent.com/OmarXploits/Free-Scripts/main/R15-Fighter"),true))()
     end
 })
+
 Window:OnClose(function()
     print("UI closed.")
 end)
