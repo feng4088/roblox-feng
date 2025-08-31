@@ -209,4 +209,8 @@ Tabs.ThroughTab:Button({
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/Q1t1VkrL"))()
     end
+
 })
+Window:OnClose(function()
+    print("UI closed.")
+end)
