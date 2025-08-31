@@ -95,6 +95,8 @@ Tabs.ParagraphTab = Tabs.MainSection:Tab({ Title = "首页", Icon = "type" })
 
 Tabs.ThroughTab = Tabs.LuaSection:Tab({ Title = "通用", Icon = "type" })
 
+Tabs.FETab = Tabs.LuaSection:Tab({ Title = "FE脚本", Icon = "type" })
+
 Tabs.WindowTab = Tabs.WindowSection:Tab({ 
     Title = "窗口和文件配置", 
     Icon = "settings", 
@@ -211,6 +213,12 @@ Tabs.ThroughTab:Button({
     end
 })
 
+Tabs.FETab:Button({
+    Title = "拳击",
+    Callback = function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/OmarXploits/Free-Scripts/main/R15-Fighter"),true))()
+    end
+})
 Window:OnClose(function()
     print("UI closed.")
 end)
