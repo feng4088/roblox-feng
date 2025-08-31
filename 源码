@@ -91,9 +91,9 @@ Tabs.WindowSection = Window:Section({
     Opened = true,
 })
 
-Tabs.ThroughTab = Tabs.LuaSection:Tab({ Title = "通用", Icon = "type" })
-
 Tabs.ParagraphTab = Tabs.MainSection:Tab({ Title = "首页", Icon = "type" })
+
+Tabs.ThroughTab = Tabs.LuaSection:Tab({ Title = "通用", Icon = "type" })
 
 Tabs.WindowTab = Tabs.WindowSection:Tab({ 
     Title = "窗口和文件配置", 
@@ -107,7 +107,7 @@ Window:SelectTab(1)
 
 Tabs.ParagraphTab:Paragraph({
     Title = "枫脚本",
-    Desc = "猫羽雫萌萌的😋",
+    Desc = "猫羽雫萌萌的",
     Image = "https://c-ssl.duitang.com/uploads/blog/202310/21/oVS4gnBVIg4A1yJ.jpg",
     ImageSize = 42,
     Thumbnail = "https://c-ssl.duitang.com/uploads/blog/202103/27/20210327131203_74b6b.jpg",
