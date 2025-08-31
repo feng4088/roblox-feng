@@ -108,8 +108,8 @@ Window:SelectTab(1)
 Tabs.ParagraphTab:Paragraph({
     Title = "枫脚本",
     Desc = "塞西莉亚！！！",
-    Image = "https://ibb.co/XrgJqsDC",
-    Thumbnail = "https://ibb.co/qYJpQ7Mg",
+    Image = "https://i0.hdslb.com/bfs/archive/86889f8ba05599cece9aa84d2160b0f11fc5777c.jpg",
+    Thumbnail = "https://i0.hdslb.com/bfs/archive/301e0dafa16dfb3c2330e6199b3f5ced9f31c7be.jpg",
     ThumbnailSize = 120
 })
 
