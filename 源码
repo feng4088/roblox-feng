@@ -214,9 +214,10 @@ Tabs.ThroughTab:Button({
 })
 
 Tabs.FETab:Button({
-    Title = "拳击",
+    Title = "机枪手",
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/shakk-code/fe-punch-script/refs/heads/main/script.lua', true))()
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/MelonsStuff/e7b408abcb813525d37e9b7a6bf301c9/raw/6421f9000e90e8a4c2ed57052208acbd6f9648dd/Minigun.txt"))()
+
     end
 })
 
