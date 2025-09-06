@@ -244,7 +244,7 @@ Tabs.FETab:Button({
     end
 })
 
-Tabs.小Tab:Button({
+Tabs.FETab:Button({
     Title = "拳击",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Gale%20Fighter"))()
