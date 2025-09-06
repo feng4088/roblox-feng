@@ -199,20 +199,6 @@ Tabs.ThroughTab:Button({
     end
 })
 
-Tabs.ThroughTab:Button({
-    Title = "甩飞",
-    Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/shuaifei/refs/heads/main/shuaifei'))()
-    end
-})
-
-Tabs.ThroughTab:Button({
-    Title = "黑洞",
-    Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/Q1t1VkrL"))()
-    end
-})
-
 Tabs.FETab:Button({
     Title = "机枪手",
     Callback = function()
@@ -222,16 +208,18 @@ Tabs.FETab:Button({
 })
 
 Tabs.FETab:Button({
-    Title = "免费通行证",
+    Title = "大运",
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/zizhi/refs/heads/main/%E5%85%8D%E8%B4%B9%E9%80%9A%E8%A1%8C%E8%AF%81'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/3LD4D0/Crazy-Man-R6/36ec60d16bf8d208c40807aa0fd2662af76a5385/Crazy%20Man%20R6"))()
+
     end
 })
 
 Tabs.FETab:Button({
-    Title = "有伤害的剑",
+    Title = "杰森",
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/zizhi/refs/heads/main/%E6%9C%89%E4%BC%A4%E5%AE%B3%E7%9A%84%E5%89%91'))()
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/MelonsStuff/6203b323781cfb0a7ad35e4e9f60e026/raw/222815c2a4f6ffe38f8ae3965f6b3640c180ab4c/Jason.lua"))()
+
     end
 })
 Window:OnClose(function()
