@@ -97,6 +97,9 @@ Tabs.ThroughTab = Tabs.LuaSection:Tab({ Title = "通用", Icon = "type" })
 
 Tabs.FETab = Tabs.LuaSection:Tab({ Title = "FE脚本", Icon = "type" })
 
+
+Tabs.CosTab = Tabs.LuaSection:Tab({ Title = "最强战场", Icon = "type" })
+
 Tabs.WindowTab = Tabs.WindowSection:Tab({ 
     Title = "窗口和文件配置", 
     Icon = "settings", 
@@ -129,7 +132,7 @@ Tabs.ParagraphTab:Input({
     Callback = function(phonto)
     end
 })
-
+---通用
 Tabs.ThroughTab:Slider({
     Title = "跳跃",
     Value = {
@@ -188,7 +191,7 @@ Tabs.ThroughTab:Toggle({
 Tabs.ThroughTab:Button({
     Title = "飞行",
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/zizhi/refs/heads/main/%E9%A3%9E%E8%A1%8C'))()   
+        loadstring(game:HttpGet("https://github.com/Sinister-Scripts/Roblox-Exploits/raw/refs/heads/main/FE-Animated-Mobile-Fly"))()
     end
 })
 
@@ -199,6 +202,13 @@ Tabs.ThroughTab:Button({
     end
 })
 
+Tabs.ThroughTab:Button({
+    Title = "黑洞",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Super-ring-Parts-V6-28581"))()
+    end
+})
+---FE
 Tabs.FETab:Button({
     Title = "机枪手",
     Callback = function()
@@ -249,6 +259,49 @@ Tabs.FETab:Button({
     Callback = function()
         loadstring(game:HttpGet("https://github.com/Sinister-Scripts/Roblox-Exploits/raw/refs/heads/main/FE-Fighter-Cracked"))()
 
+    end
+})
+
+Tabs.FETab:Button({
+    Title = "蜘蛛侠",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ke9460394-dot/ugik/refs/heads/main/%E8%9C%98%E8%9B%9B%E4%BE%A0.txt"))()
+    end
+})
+---cos
+Tabs.CosTab:Button({
+    Title = "加百列（英雄猎人）",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/damir512/youinsinificants/main/insignificantFuck.txt",true))()
+
+    end
+})
+
+Tabs.CosTab:Button({
+    Title = "宿傩（一拳）",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/3dQB5Mv5/raw"))()
+    end
+})
+
+Tabs.CosTab:Button({
+    Title = "夜神月（英雄猎人）",
+    Callback = function()
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/GoldenHeads2/35ca43410a2e96102f73dca904137973/raw/c4cb113194c35e0439151b06ea82dcc8053ff2c3/gistfile1.txt"))()
+    end
+})
+
+Tabs.CosTab:Button({
+    Title = "无限侧闪",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/10tempest01/tempest-hub/refs/heads/main/Launcher.lua"))()
+    end
+})
+
+Tabs.CosTab:Button({
+    Title = "自动格挡",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
     end
 })
 Window:OnClose(function()
