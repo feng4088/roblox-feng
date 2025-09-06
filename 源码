@@ -247,7 +247,8 @@ Tabs.FETab:Button({
 Tabs.FETab:Button({
     Title = "拳击",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Gale%20Fighter"))()
+        loadstring(game:HttpGet("https://github.com/Sinister-Scripts/Roblox-Exploits/raw/refs/heads/main/FE-Fighter-Cracked"))()
+
     end
 })
 Window:OnClose(function()
