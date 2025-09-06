@@ -222,6 +222,34 @@ Tabs.FETab:Button({
 
     end
 })
+
+Tabs.FETab:Button({
+    Title = "ak",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/AK-47"))()
+    end
+})
+
+Tabs.FETab:Button({
+    Title = "大锤",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Ban%20Hammer"))()
+    end
+})
+
+Tabs.FETab:Button({
+    Title = "圣剑",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Neptunian%20V"))()
+    end
+})
+
+Tabs.小Tab:Button({
+    Title = "拳击",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Gale%20Fighter"))()
+    end
+})
 Window:OnClose(function()
     print("UI closed.")
 end)
