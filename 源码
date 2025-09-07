@@ -206,6 +206,13 @@ Tabs.ThroughTab:Button({
         loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/deepseel/refs/heads/main/%E9%BB%91%E6%B4%9E%E6%BA%90%E7%A0%81.txt'))()
     end
 })
+
+Tabs.ThroughTab:Button({
+    Title = "闪回",
+    Callback = function()
+        loadstring(game:HttpGet("https://mscripts.vercel.app/scfiles/reverse-script.lua"))()
+    end
+})
 ---FE
 Tabs.FETab:Button({
     Title = "机枪手",
