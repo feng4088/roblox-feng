@@ -273,6 +273,13 @@ Tabs.FETab:Button({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ke9460394-dot/ugik/refs/heads/main/%E8%9C%98%E8%9B%9B%E4%BE%A0.txt"))()
     end
 })
+
+Tabs.FETab:Button({
+    Title = "起大狙",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sniper"))()
+    end
+})
 ---cos
 Tabs.CosTab:Button({
     Title = "加百列（英雄猎人）",
