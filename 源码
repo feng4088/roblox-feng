@@ -86,7 +86,7 @@ Tabs.LuaSection = Window:Section({
 })
 
 Tabs.WindowSection = Window:Section({
-    Title = "脚本制作",
+    Title = "制作脚本",
     Icon = "app-window-mac",
     Opened = true,
 })
