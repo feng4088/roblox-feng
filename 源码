@@ -331,7 +331,16 @@ Tabs.BJTab:Button({
 Tabs.CJYXTab:Button({
     Title = "自动领钱",
     Callback = function()
-        
+while true do
+        local args = {
+    [1] = 11,
+    [2] = "collectMoney",
+    [3] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("ReplicatedStorage").ReplicaRemoteEvents.Replica_ReplicaSignal:FireServer(unpack(args))
+wait(1)
+end
     end
 })
 Window:OnClose(function()
