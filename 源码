@@ -332,13 +332,19 @@ Tabs.CJYXTab:Button({
     Title = "自动领钱",
     Callback = function()
 while true do
-        local args = {
-    [1] = 11,
-    [2] = "collectMoney",
-    [3] = game:GetService("Players").LocalPlayer
-}
+        local ReplicaRemoteEvents = game:GetService("ReplicatedStorage").ReplicaRemoteEvents
+local localPlayer = game:GetService("Players").LocalPlayer
 
-game:GetService("ReplicatedStorage").ReplicaRemoteEvents.Replica_ReplicaSignal:FireServer(unpack(args))
+for i = 1, 15 do
+    local args = {
+        [1] = i,  
+        [2] = "collectMoney",
+        [3] = localPlayer
+    }
+    
+    ReplicaRemoteEvents.Replica_ReplicaSignal:FireServer(unpack(args))
+   
+end
 wait(1)
 end
     end
