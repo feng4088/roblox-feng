@@ -86,7 +86,7 @@ Tabs.LuaSection = Window:Section({
 })
 
 Tabs.WindowSection = Window:Section({
-    Title = "窗口管理",
+    Title = "脚本制作",
     Icon = "app-window-mac",
     Opened = true,
 })
@@ -97,6 +97,8 @@ Tabs.ThroughTab = Tabs.LuaSection:Tab({ Title = "通用", Icon = "type" })
 
 Tabs.FETab = Tabs.LuaSection:Tab({ Title = "FE脚本", Icon = "type" })
 
+
+Tabs.CJYXTab = Tabs.CJYXDHSection:Tab({ Title = "超级英雄", Icon = "type" })
 
 Tabs.CosTab = Tabs.LuaSection:Tab({ Title = "最强战场", Icon = "type" })
 
@@ -322,6 +324,14 @@ Tabs.BJTab:Button({
     Title = "spy",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/-spy/refs/heads/main/remote%20spy%20v3.txt'))()
+    end
+})
+---超级英雄大亨
+
+Tabs.CJYXTab:Button({
+    Title = "自动领钱",
+    Callback = function()
+        
     end
 })
 Window:OnClose(function()
