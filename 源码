@@ -98,7 +98,7 @@ Tabs.ThroughTab = Tabs.LuaSection:Tab({ Title = "通用", Icon = "type" })
 Tabs.FETab = Tabs.LuaSection:Tab({ Title = "FE脚本", Icon = "type" })
 
 
-Tabs.CJYXTab = Tabs.CJYXDHSection:Tab({ Title = "超级英雄", Icon = "type" })
+Tabs.CJYXTab = Tabs.LuaSection:Tab({ Title = "超级英雄", Icon = "type" })
 
 Tabs.CosTab = Tabs.LuaSection:Tab({ Title = "最强战场", Icon = "type" })
 
