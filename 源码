@@ -133,6 +133,13 @@ Tabs.ParagraphTab:Input({
     end
 })
 ---通用
+
+Tabs.小Tab:Button({
+    Title = "名字",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/-spy/refs/heads/main/%E5%85%8D%E8%B4%B9%E9%80%9A%E8%A1%8C%E8%AF%81'))()
+    end
+})
 Tabs.ThroughTab:Slider({
     Title = "跳跃",
     Value = {
