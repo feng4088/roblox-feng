@@ -134,8 +134,8 @@ Tabs.ParagraphTab:Input({
 })
 ---通用
 
-Tabs.小Tab:Button({
-    Title = "名字",
+Tabs.ThroughTab:Button({
+    Title = "白嫖通行证",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/-spy/refs/heads/main/%E5%85%8D%E8%B4%B9%E9%80%9A%E8%A1%8C%E8%AF%81'))()
     end
