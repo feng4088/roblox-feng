@@ -182,7 +182,11 @@ Tabs.ThroughTab:Toggle({
     Value = false,
     Callback = function(state)
         if state then
+while true do
             game.Lighting.Ambient = Color3.new(1, 1, 1)  
+wait (0.1)
+end
+
         else
             game.Lighting.Ambient = Color3.new(0, 0, 0) 
         end
