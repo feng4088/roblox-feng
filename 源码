@@ -188,7 +188,9 @@ wait (0.1)
 end
 
         else
+while false do
             game.Lighting.Ambient = Color3.new(0, 0, 0) 
+end
         end
     end
 })
