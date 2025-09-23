@@ -97,6 +97,7 @@ Tabs.ThroughTab = Tabs.LuaSection:Tab({ Title = "通用", Icon = "type" })
 
 Tabs.FETab = Tabs.LuaSection:Tab({ Title = "FE脚本", Icon = "type" })
 
+Tabs.ForceTab = Tabs.LuaSection:Tab({ Title = "力量传奇", Icon = "type" })
 
 Tabs.CJYXTab = Tabs.LuaSection:Tab({ Title = "超级英雄", Icon = "type" })
 
@@ -410,6 +411,14 @@ for i = 1, 15 do
 end
 wait(1)
 end
+    end
+})
+---力量传奇
+
+Tabs.ForceTab:Button({
+    Title = "ato力量传奇",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/deepseel/refs/heads/main/%E5%8A%9B%E9%87%8F%E4%BC%A0%E5%A5%87%E8%84%9A%E6%9C%AC%E6%B1%89%E5%8C%96ato(1)%20(1).txt'))()
     end
 })
 Window:OnClose(function()
