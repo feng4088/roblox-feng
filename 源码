@@ -103,6 +103,8 @@ Tabs.CJYXTab = Tabs.LuaSection:Tab({ Title = "超级英雄", Icon = "type" })
 
 Tabs.CosTab = Tabs.LuaSection:Tab({ Title = "最强战场", Icon = "type" })
 
+Tabs.inkTab = Tabs.LuaSection:Tab({ Title = "墨水游戏", Icon = "type" })
+
 Tabs.BJTab = Tabs.WindowSection:Tab({ 
     Title = "脚本制作", 
     Icon = "settings", 
@@ -426,6 +428,14 @@ Tabs.ForceTab:Button({
     Title = "枫制作力量传奇",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/deepseel/refs/heads/main/%E5%8A%9B%E9%87%8F%E4%BC%A0%E5%A5%87%E7%89%9B%E9%80%BC%E7%9A%84.lua'))()
+    end
+})
+---墨水游戏
+
+Tabs.inkTab:Button({
+    Title = "墨水游戏脚本",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/deepseel/refs/heads/main/%E5%A2%A8%E6%B0%B4%E6%B8%B8%E6%88%8F%E6%B1%89%E5%8C%96.txt'))()
     end
 })
 Window:OnClose(function()
