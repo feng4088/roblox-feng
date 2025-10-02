@@ -435,7 +435,7 @@ Tabs.ForceTab:Button({
 Tabs.inkTab:Button({
     Title = "墨水游戏脚本",
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/deepseel/refs/heads/main/%E5%A2%A8%E6%B0%B4%E6%B8%B8%E6%88%8F%E6%B1%89%E5%8C%96.txt'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/deepseel/refs/heads/main/XA.lua'))()
     end
 })
 Window:OnClose(function()
