@@ -91,6 +91,7 @@ Tabs.WindowSection = Window:Section({
     Opened = true,
 })
 
+Tabs.SutureTab = Tabs.大LuaSection:Tab({ Title = "其他作者脚本", Icon = "type" })
 Tabs.ParagraphTab = Tabs.MainSection:Tab({ Title = "首页", Icon = "type" })
 
 Tabs.ThroughTab = Tabs.LuaSection:Tab({ Title = "通用", Icon = "type" })
@@ -434,6 +435,14 @@ Tabs.ForceTab:Button({
 
 Tabs.inkTab:Button({
     Title = "墨水游戏脚本",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/deepseel/refs/heads/main/%E5%A2%A8%E6%B0%B4%E6%B8%B8%E6%88%8F.lua'))()
+    end
+})
+---缝合
+
+Tabs.SutureTab:Button({
+    Title = "XA",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/deepseel/refs/heads/main/XA.lua'))()
     end
