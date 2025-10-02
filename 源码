@@ -91,7 +91,8 @@ Tabs.WindowSection = Window:Section({
     Opened = true,
 })
 
-Tabs.SutureTab = Tabs.大LuaSection:Tab({ Title = "其他作者脚本", Icon = "type" })
+Tabs.SutureTab = Tabs.LuaSection:Tab({ Title = "其他作者脚本", Icon = "type" })
+
 Tabs.ParagraphTab = Tabs.MainSection:Tab({ Title = "首页", Icon = "type" })
 
 Tabs.ThroughTab = Tabs.LuaSection:Tab({ Title = "通用", Icon = "type" })
