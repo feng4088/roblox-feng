@@ -107,6 +107,10 @@ Tabs.CosTab = Tabs.LuaSection:Tab({ Title = "最强战场", Icon = "type" })
 
 Tabs.inkTab = Tabs.LuaSection:Tab({ Title = "墨水游戏", Icon = "type" })
 
+Tabs.SeaTab = Tabs.LuaSection:Tab({ Title = "海战", Icon = "type" })
+
+Tabs.DoorsTab = Tabs.LuaSection:Tab({ Title = "Doors", Icon = "type" })
+
 Tabs.BJTab = Tabs.WindowSection:Tab({ 
     Title = "脚本制作", 
     Icon = "settings", 
@@ -446,6 +450,21 @@ Tabs.SutureTab:Button({
     Title = "XA",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/deepseel/refs/heads/main/XA.lua'))()
+    end
+})
+---海战
+
+Tabs.SeaTab:Button({
+    Title = "XA",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/deepseel/refs/heads/main/%E6%B5%B7%E6%88%98.lua'))()
+    end
+})
+---Doors
+Tabs.小Tab:Button({
+    Title = "XA",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/deepseel/refs/heads/main/Doors.lua'))()
     end
 })
 Window:OnClose(function()
