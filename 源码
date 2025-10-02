@@ -461,7 +461,7 @@ Tabs.SeaTab:Button({
     end
 })
 ---Doors
-Tabs.小Tab:Button({
+Tabs.DoorsTab:Button({
     Title = "XA",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/feng4088/deepseel/refs/heads/main/Doors.lua'))()
